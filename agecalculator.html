@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="dob">
+    <button onclick="func()">Click Here</button>
+    <script>
+        
+        function func(){
+            var dob=document.getElementById("dob").value;
+            var date=new Date(dob);
+            var presentyr=new Date();
+            var age=presentyr.getFullYear()-date.getFullYear();
+            document.write("Your age is", age)
+        }
+        
+    </script>
+</body>
+</html>
